@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan this </title>
+</head>
+<body>
+	<h1>kita membuat sebua angkot</h1>
+
+<script type="text/javascript">
+	
+		function angkot(sopir,tujuan,penumpang,kas){
+			
+			this.v_sopir=sopir;
+			this.v_tujuan=tujuan;
+			this.v_penumpang=penumpang;
+			this.v_kas=kas;
+
+			this.penumpang_naik=(namaPenumpang)=>{
+				this.v_penumpang.push(namaPenumpang);
+				return this.v_penumpang;
+			}
+			this.penumpang_turun=(namaPenumpang,bayar)=>{
+
+				if (this.v_penumpang.lenght===0) {
+					alert('penumpang kosong');
+					return false;
+				}else{
+					this.v_penumpang.forEach(nama=>{
+						if(this.v_penumpang[nama]===namaPenumpang){
+							this.v_penumpang[nama]=undefined;
+						}else{
+							this.kas +=bayar;
+							return this.v_penumpang;
+						}
+					})
+
+				}
+			}
+
+		}
+		var angkot_no1 = new angkot('den',['makassar','tator'],[],0);
+		
+		
+
+</script>
+
+</body>
+</html>

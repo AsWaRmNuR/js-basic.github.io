@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>callbackfunction_js</title>
+</head>
+<body>
+    
+    <script>
+        const data=(callbackfunc)=>{
+            let value='ini adalah callbackfunction';
+            callbackfunc(value);
+        }
+        data(function(apa) {
+            console.log(apa);
+        });
+        //cara ke2
+        const data2=(callbackfunc)=>{
+            let value='ini adalah aaaaaaaaaaaaaaaa';
+            callbackfunc(value);
+        }
+        data2(value=> {
+            console.log(value);
+        });
+        //cara ke tiga
+        let data3=function(panggil_ulang_func){
+        var nilai=123;
+        panggil_ulang_func(nilai);
+        }
+        data3(function (vl) {
+            console.log(vl);
+        })
+
+    </script>
+
+</body>
+</html>

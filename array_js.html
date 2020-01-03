@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>array</title>
+</head>
+<body>
+
+    <script>
+    let value=['aswar','sulsel',23];
+
+    //CARA Mencetaknya
+    console.log(value);
+    //cara mencetak dari urutan indexnya
+    console.log(value[1]);
+    //length berfungsi untuk menhitung jumlah index pada arraynya
+    console.log(value.length);
+    // join() untuk menggabungkan nilai value sesui dengan apa yg kita berikan pada kurungnya()
+    console.log(value.join('-'));
+    //indexOf() akan menetukan variabel tersebut dari index kekeberapa
+    console.log(value.indexOf('aswar'));
+    //conca()t untuk menambakan value pada array atau menggabungkan value array tergantung apa yg dimasukan di dalam ()
+    console.log(value.concat(' akida','tauhid'));
+
+    // push ( some_value ) : merupakan fungsi yang digunakan untuk memasukkan value ke sebuah array dan disimpan di paling akhir / paling kanan.
+    // pop ( ) : digunakan untuk menghapus / remove isi array paling akhir.
+    // shift ( ) : digunakan untuk menghapus / remove isi array paling awal.
+    // unshift ( some_value ) : fungsi yang digunakan untuk memasukkan value ke sebuah array tetapi disimpan di paling awal / ujung kiri.
+    // contoh:
+    var angka= [ 1 , 2 , 3 , 4 , 5 ] ;
+    angka.push(6);
+    console.log(angka) ; // 1, 2, 3, 4, 5, 6
+
+    angka.pop();
+    console.log(angka); // 1, 2, 3, 4, 5
+
+    angka.unshift(0);
+    console.log(angka); // 0, 1, 2, 3, 4, 5 
+
+    angka.shift();
+    console.log(angka); // 1, 2, 3, 4, 5
+    </script>
+    
+</body>
+</html>

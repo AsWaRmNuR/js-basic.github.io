@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+           <b> Berkenalan Dengan Javascript Arrow Function</b>
+            Kali ini kita akan mengenal salah satu fitur Javascript yang ditambahkan sejak EcmaScript 6, yaitu arrow function.
+            
+            Arrow function adalah sintak penulisan fungsi yang bisa dibilang lebih singkat, menggunakan token baru yaitu “=>”, fungsi yang dideklarasikan menggunakan panah ini bersifat anonim. Mirip lambda arrow operator di bahasa lain. Dengan arrow function kita bisa menulis fungsi tanpa menggunakan kata kunci “function”, “return”, dan kurung kurawal. Oke mari kita langsung saja membahas sedikit.
+    </p>
+    <script>
+    // Berkenalan Dengan Javascript Arrow Function
+
+    //contoh mengunakan 2 parameter Javascript Arrow Function
+    const data1=(nilai1,nilai2)=>{
+        return nilai1*nilai2
+         };
+    console.log('mengunakan 2 parameter Javascript Arrow Function = ',data1(2,5)); 
+    //contoh mengunakan 1 parameter Javascript Arrow Function
+    const data2= nilai1=>{
+       return nilai1**2
+    };
+    console.log('mengunakan 1 parameter Javascript Arrow Function = ',data2(5)); 
+    //contoh mengunakan 0 parameter Javascript Arrow Function
+    const data3= ()=>{
+        return 5*2+1 
+    };
+    console.log('mengunakan 0 parameter Javascript Arrow Function = ',data3()); 
+    
+    //kalau cuma 1 baris stetmentnya bisa tidak menggunakan tada kurung {}
+    const data4= nilai1=> nilai1/2 ;//bisa juga kaya gini
+    console.log(data4(2));
+
+    </script>
+
+</body>
+</html>

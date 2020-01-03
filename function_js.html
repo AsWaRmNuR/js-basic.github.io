@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>function expresi</title>
+</head>
+<body>
+
+    <div id='a'>aaa</div>
+    <div id='a'>bbb</div>
+    <div id='a'>ccc</div>
+    <div id='a'>ddd</div>
+
+    <script>
+
+        var div= document.querySelectorAll('div')[1];
+        div.style.color='red';
+        div.innerHTML='aswar';
+    //fuction biasa
+    function data()
+    {
+        console.log('hai bro');
+    }
+    data();//cara cetak
+
+    //funcntion expresi
+    const data_expresi= function(namaku)
+    {
+        console.log('my name',namaku);
+    }
+    data_expresi('aswar')//cara cetak
+
+    //cara menghitung lingkaran
+    const luas_lingkatran=function(radius)
+    {
+        // const pi=3.14;
+        let result= Math.PI+'X'+radius+'pangkat 2 ='+Math.PI*radius**2;
+        console.log(result);
+
+        //Math
+        //cara membulatkan
+        let result2=Math.round(Math.PI*radius**2);
+        console.log(result2);
+        let result3=Math.floor(Math.PI*radius**2);
+        console.log(result3);
+    }
+    luas_lingkatran(5);//cara mencetak
+
+    </script>
+    
+</body>
+</html>

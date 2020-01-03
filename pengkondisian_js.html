@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pengkondisian</title>
+</head>
+<body>
+
+    <script>
+    let email = 'mario@thenetninja.co.uk';
+    // includes()  akan menghasilkan bolean jika karakter dalam ('') ada maka nilainya true jika tidak false
+    let hasil= email.includes('@');//nilainya akan true  karena karakter @ ada pada valuenya
+    console.log(hasil);
+    let hasil2= email.includes('#');//nilainya akan false  karena karakter # tidak ada pada valuenya
+    console.log(hasil2);
+
+    var nilai= 10;
+
+    var result= nilai===10;
+    console.log('nilai==10 =',result);//true
+    var result=nilai>10;
+    console.log('nilai > 10 =',result);//false
+    var result=nilai<10;
+    console.log("nilai < 10 =",result);//false
+    var result=nilai>=10;
+    console.log('nilai >= 10 =',result);//true
+    var result=nilai<=10;
+    console.log("nilai <= 10 =",result);//true
+    var result=nilai!=10;
+    console.log("nilai != 10 =",result);//false
+
+    let age=25;
+    console.log(age === 25);
+    console.log(age === '25');
+    console.log(age !== 25);
+    console.log(age !== '25');
+    </script>
+    
+</body>
+</html>

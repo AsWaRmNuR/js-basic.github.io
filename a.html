@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+           
+            <b>undefined</b> berarti sebuah variabel belum dideklarasikan, atau telah dinyatakan namun belum diberi nilai. Sedangkan <b>null</b> adalah nilai penugasan yang berarti “tidak ada nilai”. undefined tidak berlaku di JSON sementara null berlaku. tipe undefined tidak terdefinisi, sedangkan tipe null adalah sebuah objek.
+    </p>
+    
+    <script>
+    // type conversion
+     let score = '100';//tipe data string
+     console.log(score + 1);// karana (score = string) & (1 = int) maka hasilnya =1001 dengan cara di gabungkan karna salatunya adalah string
+      score = 100;//tipe data int
+     console.log(score + 1);//karna (score = int) & (1 = int) maka hasilnya =101  dengan cara di jumlahkan karna keduanya int
+
+    //  fungsi utama dari operator (typeof) itu sendiri adalah melakukan pengecekan tipe data dari sebuah nilai
+     let nilai=10;
+     console.log(typeof nilai);//hasilnya adalah = "number" karna nilai=valuenya 10 dimana 10 adalah tipe number
+     let str='str';
+     console.log(typeof str);// hasilnya adalah = "string" karna str=valuenya 'str' dimana 'str' adalah tipe string
+     
+    // let result = Number('hello');
+    // let result = String(50);
+    // let result = Boolean(100);
+    // let result = Boolean(0);
+    // let result = Boolean('0');
+    // let result = Boolean('');
+
+    // console.log(result, typeof result);    
+    
+    </script>
+    
+</body>
+</html>

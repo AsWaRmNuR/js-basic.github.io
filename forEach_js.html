@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>forEach</title>
+</head>
+<body>
+    
+    <script>
+    let cnt_array=[1,2,3,4,5];
+    cnt_array.forEach(function(nilai){
+        console.log('index ke',nilai);
+        // console.log('index ke',cnt_array[0]);//tidak bisa digunakan di forEach kecuali di for
+    })
+    //cara kedua
+    let cnt2_array=['a','s','w','a','r'];
+    cnt2_array.forEach(value=>{
+        console.log('index ke',value);
+        // console.log('index ke',cnt_array[0]);//tidak bisa digunakan di forEach kecuali di for
+    })
+    //cara ketiga menampilkan indexnya
+    let cnt3_array=['zaki','aswar','nuha','fadil'];
+    cnt3_array.forEach(function(val,index){
+        console.log(val,'index ke ',index);
+    })
+    //cara ke 4 
+    let orang=['zaki','aswar','nuha','fadil'];
+    const data=function(aray,index){
+        console.log(`keluaran arraynya ${aray} index ke ${index}`);
+    }
+    orang.forEach(data);
+    
+    
+
+    </script>
+
+</body>
+</html>

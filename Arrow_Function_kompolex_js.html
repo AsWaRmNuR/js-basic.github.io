@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow_Function_kompolex_js</title>
+</head>
+<body>
+    
+    <script>
+         const data=function (nilai1,nilai2)
+         {
+            let total=0;
+            for(let i=0;i<nilai1.length ;i++)
+            {
+                 total += nilai1[i]+nilai2;     
+            }return total;
+         }
+         console.log(data([2,3,4],5));
+
+         //Arrow_Function
+
+         const data2=(n1,n2)=>{
+             let total=0;
+             for(let x=0;x<n1.length;x++){
+                total +=n1[x]+n2;
+             }return total;
+         }
+         console.log(data2([2,3,4],5));
+
+
+    </script>
+
+</body>
+</html>

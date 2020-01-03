@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this js</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		console.log(this);
+		// cara membuat objek
+		// 1 objek function deklaration
+		function obj1(){
+		    console.log('objek function');
+		}
+		//cara cetaknya
+		this.obj1();//jika mengunakan this pada function deklaration maka
+		// this adalah mengembalikan obkjek global
+
+
+		//2 objek literal
+		let obj2={
+			nama:'aswar',
+			kerja:'programer'
+		    // data:function(){
+		    //     console.log(' objek literal');
+		    // }
+		}
+		obj2.data=function(){
+			console.log(this);
+		    console.log(' objek literal')
+		}
+		//CARA CETAKNYA
+		obj2.data();//jika mengunakan this pada objek literal maka
+		// this adalah mengembalikan objek bersangkutan
+
+
+
+		//3 objek construk
+		function Obj3(){
+		    console.log('objek construk');
+		    console.log(this);
+		}
+		//cara cetaknya 
+		var objek1 new Obj3();
+		var objek2 new Obj3();//jika mengunakan this pada objek construktor maka
+		//this adalah mengembalikan objek yg baru dibuat
+
+
+	</script>
+</body>
+</html>

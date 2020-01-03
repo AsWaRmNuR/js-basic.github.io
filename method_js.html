@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>method</title>
+</head>
+<body>
+    
+    <script >
+        // string methods
+        let email = 'mario@thenetninja.co.uk';
+        let hasil= email.includes('@');//nilainya akan true  karena karakter @ ada pada valuenya
+        console.log(hasil);
+        let hasil2= email.includes('#');//nilainya akan false  karena karakter # tidak ada pada valuenya
+        console.log(hasil2);
+
+        console.log(email.toUpperCase());//untuk mengubah karakter menjadi huruf besar
+        let result = email.toLocaleLowerCase();//untuk mengubah karakter menjadi huruf kecil
+        console.log(result);
+
+        //cara mengetahui apakah value atau katakter tersebut ada atau tidak dgn menggunakan includes()
+        let array =['aswar','nur'];
+        let x= array.includes('nur');//nilainya akan true  karena karakter @ ada pada valuenya
+        console.log(x);
+        let y= array.includes('bambang');//nilainya akan false  karena karakter # tidak ada pada valuenya
+        console.log(y);
+
+
+        //cara melihat nomor indexnya  yg di ambil adalah angka awal walapun ada karakter yg sama
+        let index = email.indexOf('@');//untuk mengetahui nomor index ke berapa pada karakter @ 
+        console.log('index of the @ sign:', index);
+        //cara melihat nomor indexnya yg di ambil adalah angka terakhir walapun ada karakter yg sama
+        let index1=email.lastIndexOf('i');
+        console.log('index of the @ sing:',index1);
+
+        //untuk menyambung sebua karakter atau value
+        //dimana ('','','') ada 3 parameter yng ke_1 untuk mulainya, ke_2 untuk yg dihapus, ke_3 value/karakter yg ingin di isi  
+        let ar=['a','s','d','f'];
+        let index2=ar.splice(1,0,'zz');
+        console.log('hasil',ar);
+ 
+        //cara untuk menampilkan karakter dengan slice('','') dimana ada 2 parameter si scopenya
+        let index3= email.slice(2,6);//slice menghasilkan array baru jadi array sebelumnya masi bisa di pakai
+        console.log('menampilkan perpotongan dari .slice(2,6) =',index3); 
+        //cara untuk menampilkan karakter dengan substr('','') dimana ada 2 parameter si scopenya yg hanya meanampilkan dari index parameter sampai index parameter terakhir
+        let index4 = email.substr(2,6);
+        console.log('menampilkan index dari parameter awal sampai parameter yg kedua .substr(2,6) =',index4);
+
+        //cara menggantikan karakter yg kita inginkan dengan replace('','') denhan mengisi 2 parameter yg pertama ada karakter apa yg ingin diganti dan parameter ke dua adalah karak ter apa yg kita inginkan
+        let index5= email.replace('m','x');
+        console.log( "menggantikan karakter yg kita inginkan dengan replace('m','x') =",index5);
+    </script>
+
+</body>
+</html>
